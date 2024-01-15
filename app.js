@@ -81,6 +81,23 @@ nextBtn.addEventListener("click", () => {
   carousel.scrollLeft += slideWidth + 32;
 });
 
+// blog carousel
+
+const blogCarousel = document.getElementById("blog-carousel");
+const prevBtnBlog = document.getElementById("prev-blog");
+const nextBtnBlog = document.getElementById("next-blog");
+const slideBlog = document.querySelector(".blog-slide");
+
+prevBtnBlog.addEventListener("click", () => {
+  const slideWidth = slideBlog.clientWidth;
+  blogCarousel.scrollLeft -= slideWidth + 32;
+});
+
+nextBtnBlog.addEventListener("click", () => {
+  const slideWidth = slideBlog.clientWidth;
+  blogCarousel.scrollLeft += slideWidth + 32;
+});
+
 // review carousel
 
 const reviewCarousel = document.getElementById("review-carousel");

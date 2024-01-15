@@ -288,7 +288,7 @@ video {
   right: 0;
   left: 0;
   width: 0px;
-  height: 2px;
+  height: 1.5px;
   transition: all 0.3s linear;
 }
 
@@ -421,7 +421,7 @@ video {
 }
 
 .faq-height {
-  max-height: 11rem;
+  max-height: 12rem;
 }
 
 .blog-1 {
@@ -433,8 +433,12 @@ video {
 }
 
 .blog-3 {
-  padding-bottom: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.blog-3::-webkit-scrollbar:horizontal {
+  width: 0px;
+  height: 0px;
 }
 
 .blog-4 {
@@ -446,7 +450,7 @@ video {
 }
 
 .footer-1 {
-  padding: 4rem 2rem;
+  padding: 8rem 2rem 4rem 2rem;
 }
 
 .footer-2 {
@@ -484,7 +488,15 @@ video {
   text-decoration: underline;
 }
 
+.blog-6 {
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
+  .blog-6 {
+    text-align: left;
+  }
+
   .footer-8 {
     align-items: baseline;
     gap: 1.5rem;
@@ -522,7 +534,7 @@ video {
   }
 
   .footer-1 {
-    padding: 6rem 8rem 2rem 8rem;
+    padding: 8rem 8rem 2rem 8rem;
   }
 
   .blog-5 {
@@ -534,8 +546,7 @@ video {
   }
 
   .blog-3 {
-    padding-bottom: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .blog-2 {
